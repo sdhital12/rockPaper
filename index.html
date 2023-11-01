@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Lizard Spock</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <div class="input-container">
+            <label for="rounds">Number of Rounds to Play:</label>
+            <input type="number" id="rounds">
+            <button onclick="startGame()">Start</button>
+        </div>
+        <div class="game-container">
+            <div id="remaining-rounds"></div>
+            <div id="player-choices">
+                <button onclick="playerChoice('rock')">Rock</button>
+                <button onclick="playerChoice('scissors')">Scissors</button>
+                <button onclick="playerChoice('paper')">Paper</button>
+                <button onclick="playerChoice('lizard')">Lizard</button>
+                <button onclick="playerChoice('spock')">Spock</button>
+            </div>
+            <div id="computer-choice"></div>
+            <div id="result"></div>
+            <div id="overall-result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
